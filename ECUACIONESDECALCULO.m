@@ -1,9 +1,9 @@
 % De secuencia de comandos de octava
-% Título: Resolución de desigualdades
-% Descripción: Script para resolver inecuaciones (primer grado, segundo grado, valor absoluto)
+% TÃ­tulo: ResoluciÃ³n de desigualdades
+% DescripciÃ³n: Script para resolver inecuaciones (primer grado, segundo grado, valor absoluto)
 % Autor: Joel Emmanuel De La Cruz Rodriguez, Maria Guadalupe Martinez Narvaes, Osvaldo Hernandez Martinez
 % Fecha: 2021-10-07
-% Versión: 1
+% VersiÃ³n: 1
 % Uso C: \ User \ osval \ Documentos \ DocumentosOctave \ Inecuaciones.m
 % Notas: Requiere aplicacion obtener
 
@@ -25,7 +25,6 @@ plot([0 0],[-15 15],'k-',"linewidth",5)
 plot(x,sign(y)*5,'bs-',"markersize",12)
 xlabel("Eje X","fontsize",20);
 title( "El intervalo es: (-oo,-4)" )
-
 %Inecuaciones de Segundo Grado
 syms x
 disp("Inecuacionesde Segundo Grado");
@@ -34,6 +33,7 @@ solve(x^2+9*x<23)
 subplot(2,2,2)
 y=9*x-23
 ezplot((x)^2,y)
+
 
 %Inecuaciones de Valor Absoluto
 syms x
